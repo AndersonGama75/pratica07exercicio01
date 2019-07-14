@@ -1,0 +1,75 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Prática 07 - Exercício 01</title>
+		<link rel="stylesheet" href="pratica07exercicio01.css"/>
+	</head>
+	<body>
+		<script src="pratica07exercicio01.js" type="text/javascript"></script>
+		<table id="tabela">
+			<caption>Saiba se o aluno foi aprovado ou reprovado</caption>
+			<thead class="cabecalho">
+				<tr>
+					<td>Nome do Aluno</td>
+					<td>Nota P1</td>
+					<td>Nota P2</td>
+					<td>Nota T1</td>
+					<td>Nota Total</td>
+					<td>Faltas</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="ln1" onclick="resultado(id)">
+					<td class="alinEspec" type="text">Ana</td>
+					<td>29</td>
+					<td>17</td>
+					<td>27</td>
+					<td type="number" class="mediaAlunos">73</td>
+					<td type="number">0</td>
+				</tr>
+				<tr id="ln2" onclick="resultado(id)">
+					<td class="alinEspec" type="text">Gisele</td>
+					<td>28</td>
+					<td>18</td>
+					<td>24</td>
+					<td type="number" class="mediaAlunos">70</td>
+					<td type="number">3</td>
+				</tr>
+				<tr id="ln3" onclick="resultado(id)">
+					<td class="alinEspec" type="text">Jane</td>
+					<td>26</td>
+					<td>20</td>
+					<td>24</td>
+					<td type="number" class="mediaAlunos">70</td>
+					<td type="number">1</td>
+				</tr>
+				<tr id="ln4" onclick="resultado(id)">
+					<td class="alinEspec" type="text">Jorge</td>
+					<td>25</td>
+					<td>19</td>
+					<td>29</td>
+					<td type="number" class="mediaAlunos">73</td>
+					<td type="number">0</td>
+				</tr>
+				<tr id="ln5" onclick="resultado(id)">
+					<td class="alinEspec" type="text">Marina</td>
+					<td>30</td>
+					<td>16</td>
+					<td>27</td>
+					<td type="number" class="mediaAlunos">73</td>
+					<td type="number">1</td>
+				</tr>
+				
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="alinEspec">Média</td>
+					<td id="mediaPost">71,8</td>
+				</tr>
+			</tfoot>
+		</table>
+	<h4>Informe o nome de um aluno ou clique diretamente na tabela:</h4> <input type="text" id="nome" class="campo" onclick="javascript:this.value=''"/>  <!-- onclick p/ limpar o campo -->
+	<button onclick="resultado()" class="btt">Ok</button>
+	</body>
+</html>
